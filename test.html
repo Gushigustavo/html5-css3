@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=decice-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+      *{
+        border:0;
+        margin:0;
+        padding:0;
+        outline: none;
+      
+      }
+      body{
+        font-family:sans-serif;
+        min-height: 100vh;
+        min-width:100vw ;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+          }
+          main{
+            background-color: white;
+            width:250px;
+            height:350px;
+            
+          }
+          h1{
+            margin-bottom:30px;
+          }
+          
+          main.container{
+            position:relative;
+            padding:10px;
+          }
+          main.container input {
+            width:100%;
+          }
+            input::placeholder{
+              font-size:1.4em;
+              padding:5px;
+            }
+            
+            div.underline{
+              margin-bottom:30px;
+            }
+          
+          div.underline::before{
+            position:absolute;
+            content:"";
+            background-color:red;
+            height:4px;
+            width:83%;
+          }
+            
+          
+          div.underline::after{
+            position:absolute;
+            content:"";
+            background-color:yellow;
+            height:4px;
+            width:83%;
+          transform:scaleX(0);
+          transition:all 0.3s ease-in-out;
+            
+          }
+          div.campo input:focus ~ .underline::after{
+            transform:scaleX(1);
+          }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Login</h1>
+      <div class="campo">
+        <input type="text" name="Usernama" id="Usernama" placeholder="Username">
+        <div class="underline"/> </div>
+      </div>
+      <div class="campo">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <div class="underline"/> </div>
+      </div>
+    </main>
+  </body>
+</html>

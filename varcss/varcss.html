@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+    <title>varcss</title>
+    <style>
+    /*
+    #2795AE
+    #2892AE
+    #2ABFA4
+    #29D9A7
+    #323A45
+    */
+    @font-face{
+        font-family:droid;
+        src:url("fontes/idroid.otf") format("opentype");
+    }
+
+    
+    :root{
+        --cor1:#2795AE;
+        --cor2:#2892AE;
+        --cor3:#2ABFA4;
+        --cor4:#29D9A7;
+        --cor5:#323A45;
+        
+        --fontepadrao:Arial, Helvetica,Verdana, sans-serif;
+        --fdetaque:'droid', cursive;
+    
+    }
+    
+    
+    body{
+        background-image:linear-gradient(90deg,var(--cor2), transparent);
+    }
+      header{
+          font-family: var(--fdetaque);
+          color:var(--cor2);
+          background-color:var(--cor3);
+      }  
+        main{
+            background-color:var(--cor1);
+            
+        }
+        p{
+            font-family: droid;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+<header><h1>Exercicio de variaveis em css</h1></header>
+<main><h2>Teste</h2></main>
+<p>blablablablablablabla</p>
+<footer></footer>
+</body>
+
+</html>

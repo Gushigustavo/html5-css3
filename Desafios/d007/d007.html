@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta chatset="utf-8">
+        <meta name="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+        <title>D007</title>
+        <style>
+         img{
+           width:100%;
+           min-width: 350px;
+           max-width:1000px;
+            display:block;
+            margin:auto;
+          
+        }
+        </style>
+    </head>
+    <header><h1>Desafio das imagens</h1></header>
+    <main>
+        <picture>
+            <source media="(max-width:360px)" srcset="imagens/paisagem-p.png" type="image/png">
+            
+            <source media="(max-width:597px)" srcset="imagens/paisagem-m.png" type="image/png">
+        
+            <img id="im" src="imagens/paisagem-g.png" alt="imagemGrande">
+            
+        </picture>
+    </main>
+    <footer></footer>
+</html>

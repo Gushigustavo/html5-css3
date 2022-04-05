@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title> Exercicio de listas</title>
+
+</head>
+<body>
+    <header>
+        <h1>Listas em <abbr title="Hypertext markup linguage">Html.</abbr></h1>
+    </header>
+    <main>
+        <h2>Explicando como aplicar a tag &lt;Ol&gt; (ORDERED LIST)</h2>
+        <p>
+            Para aplicar a lista ordenada deve-se chamar as tags de abertura e fechamento <strong>&lt;ol&gt;&lt;/ol&gt;</strong>, entre elas devemos colocar os itens da lista chamando a tag <strong>&lt;li&gt;&lt;/li&gt;</strong> (list item), vamos a um exemplo.
+        </p>
+        <p>
+            EX:..
+        </p>
+        <pre>
+            &lt;ol&gt;
+            &lt;li&gt; 1 items&lt;/li&gt;
+            &lt;li&gt; 2 items&lt;/li&gt;
+            &lt;li&gt; 3 items&lt;/li&gt;
+            &lt;/ol&gt;
+        </pre><br>
+        <p>
+            A tag &lt;ol&gt; possui um parâmetro <strong>type</strong> onde configuramos o tipo de marcado, esses marcadores podem se 1,2,3.., A,B,C.., a,b,c.., I,II,III,IV..,por padrão os itens desta lista seram numerados, podemos também defenir em que inico de marcador os itens da lista podem comecar, com o parâmetro <strong>start</strong>.
+            <p>
+                EX:.
+            </p>
+
+
+            <pre>
+
+
+                &lt;ol type="I" start="3"&gt;
+
+                &lt;li&gt; III items &lt;/li&gt;
+                &lt;li&gt; IV items &lt;/li&gt;
+                &lt;li&gt; V items &lt;/li&gt;
+
+                &lt;/ol&gt;
+
+
+
+
+            </pre>
+
+        </p>
+
+        <h2>Listas não ordenadas &lt;ul&gt; (unordered list).</h2>
+        <p>
+            A aplicação das tags não ordenadas,<strong>&lt;ul&gt;&lt;/ul&gt;</strong>, como mostrada tem abertura e fechamento, entre elas aplicamos a tag <strong>&lt;li&gt;&lt;/li&gt;</strong> para adicionar os items da lista não ordenada.
+        </p>
+
+        <p>
+            EX:.
+        </p>
+
+        <pre>
+            &lt;ul&gt;
+            &lt;li&gt; item &lt;/li&gt;
+            &lt;li&gt; item &lt;/li&gt;
+            &lt;li&gt; item &lt;/li&gt;
+            &lt;/ul&gt;
+
+        </pre>
+
+        <p>
+            Nas listas não ordenadas tembém podemos mudar os marcadores podendo ter até 3 tipos, sendo <strong>disc</strong> (uma bola preta toda pintada,essa por padrão, <strong>circle</strong> um círculo com uma borda preta sem preenchimento e <strong>square</strong> um quadrado preto todo pintado, segue o exemplo a baixo:
+        </p>
+
+        <p>
+            EX:.
+        </p>
+
+        <ul>
+            <li>Disc</li>
+        </ul>
+        <ul type="circle">
+            <li> Circle</li>
+        </ul>
+        <ul type="square">
+            <li> Square</li>
+        </ul>
+        <br>
+
+        <h2> Lista mista</h2>
+        <p>
+            Em uma lista mista podemos colocar lista em cadeia, ou seja uma dento de outra isso ordenada com ordenadas ou vice versa, abaixo segue o exemplo.
+        </p>
+
+        <p>
+            Ex:.
+        </p>
+    <pre>
+    &lt;ol&gt;
+      &lt;li&gt;Item &lt;/li&gt;
+      &lt;li&gt;Item &lt;/li&gt;
+      &lt;li&gt;Item &lt;/li&gt;
+         &lt;ol&gt;
+            &lt;li&gt;Item &lt;/li&gt;         
+            &lt;li&gt;Item &lt;/li&gt;      
+            &lt;li&gt;Item &lt;/li&gt;
+         &lt;/ol&gt;
+      &lt;li&gt;Item &lt;/li&gt;  
+      &lt;li&gt;Item &lt;/li&gt;
+      &lt;li&gt;Item &lt;/li&gt;
+    &lt;/ol&gt;
+        </pre>
+
+
+        <hr><br>
+
+        <h1> Exercícios.</h1><br>
+        <ol type="A">
+            <li> Faça uma lista ordenada dos seus jogos favoritos.</li>
+        </ol>
+
+        <br>
+
+        <ol>
+            <li>Fortnite</li>
+            <li>Need for speed</li>
+            <ol type="a">
+                <li> Need fos speed underground 2.1</li>
+                <li> Need for speed moster wander 2.3</li>
+            </ol>
+            <li>Gear</li>
+            <li>Just 4</li>
+            <li>Tartaruga ninja ps2</li>
+            <li>Plants vc zombie</li>
+            <li>Hitman</li>
+        </ol>
+
+        <br>
+
+        <ol type="A" start="2">
+            <li>Faça uma lista ordenada e não ordenada</li>
+        </ol>
+
+        <p>
+            Lista ordenada
+        </p>
+
+        <ol>
+            <li>Gustavo</li>
+            <li>Silva</li>
+            <li>Santos</li>
+        </ol>
+
+        <p>
+            Lista não ordenada
+        </p>
+
+        <ul>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Macarrão</li>
+        </ul>
+
+        <br>
+
+        <ol type="A" start="3">
+            <li>Elabore uma lista mista.</li>
+
+        </ol>
+
+        <br>
+
+        <ol type="A">
+            <li> lista mista</li>
+            <li> lista mista</li>
+            <li> lista mista</li>
+
+            <ol type="a">
+                <li> lista mista</li>
+                <li> lista mista</li>
+                <li> lista mista</li>
+            </ol>
+
+            <li> lista mista</li>
+            <li> lista mista</li>
+            <li> lista mista</li>
+        </li>
+    </ol>
+
+
+
+</main> 
+<hr><br>
+
+<footer>
+    <em>Estes exercícios foram propostos pelo professor Gustavo guanabara dos seu pdf no Github e do canal CURSOEMVIDEO.
+    </em>
+    </footer>
+</body>
+</html>

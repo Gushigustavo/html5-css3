@@ -1,0 +1,32 @@
+
+
+
+
+body{
+    width:350px;
+    background-image:linear-gradient(90deg,#F28705,#F29F05,#F2B705);
+    
+}
+main{
+    background-color:white;
+    width:300px;
+    padding: 10px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:3px 3px 3px #03658C;
+    
+}
+p{
+    text-align:justify;
+    
+}
+
+h1{
+    color:#A62014;
+    
+}
+
+h2{
+    
+    color:#03658C;
+}

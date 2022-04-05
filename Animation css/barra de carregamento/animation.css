@@ -1,0 +1,93 @@
+
+:root{
+  --contagem:0;
+}
+
+#barra_externa{
+
+  
+  margin-top:200px;
+  width:250px;
+  height: 15px;
+margin:auto;
+border:1px solid black;
+border-radius:7px;
+
+  
+}
+
+#barra_interna{
+  height:100%;
+  animation-name: barra;
+  animation-duration:7s;
+  animation-iteration-count: infinite;
+  
+  background-image:linear-gradient(90deg,#D9308D,#BF26A6,#7C17BF,#500FD6,#4B64F2);
+  border-radius:5px;
+  
+}
+#barra_interna::after{
+  display:block;
+  content:var(--contagem);
+  color:#fff;
+  text-align:right;
+  border
+  
+  
+  
+  
+}
+@keyframes barra{
+  
+  0%{
+    width:0%;
+    --contagem:"0%";
+  }
+  10%{
+    width:10%;
+    --contagem:"10%";
+  }
+  18%{
+    width:18%;
+    --contagem:"18%";
+  }
+  32%{
+    width:32%;
+    --contagem:"32%";
+  }
+  51%{
+    width:51%;
+    --contagem:"51%";
+  }
+  73%{
+    width:73%;
+    --contagem:"73%";
+  }
+    74%{
+    width:74%;
+    --contagem:"74%";
+  }
+    75%{
+    width:75%;
+    --contagem:"75%";
+  }
+    79%{
+    width:79%;
+    --contagem:"79%";
+  }
+    86%{
+    width:86%;
+    --contagem:"86%";
+  }
+    91%{
+    width:91%;
+    --contagem:"91%";
+  }
+    96%{
+    width:96%;
+    --contagem:"96%";
+  }
+    100%{
+    width:100%;
+    --contagem:"100%";
+}

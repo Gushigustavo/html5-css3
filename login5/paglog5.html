@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tst</title>
+    <style>
+    :root{
+  --cor1:#5C23D9;
+  --cor2:#4D3BDF;
+  --cor3:#414CE8;
+  --cor4:#345EF1;
+  --cor5:#2B6BF7;
+    }
+        *{
+          border:0;
+            margin:0;
+            padding:0;
+            outline:none;
+            
+        }
+        body{
+           background-image:linear-gradient(to right,var(--cor1),var(--cor2),var(--cor3) );
+          
+          min-height:100vh;
+          min-width: 100vw;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          
+          
+          
+        }
+        main h1{
+          margin-bottom:30px;
+          text-align:left;
+          font-size:2.4em;
+        color:rgba(0,0,0,0.7);
+          
+        }
+        form.conteiner{
+          padding:20px;
+          background-color:#fff;
+        width:250px;
+        height:350px;
+          border-radius:5px;
+        }
+        form input{
+          height:40px;
+          width:100%;
+          font-size:1em;
+        
+        
+        }
+        input::placeholder{
+          font-size:1.5em;
+          padding-left:10px;
+          color:rgba(0,0,0,0.3);
+          
+        }
+      
+        div.campo{
+          position:relative;
+        }
+          input:first-child{
+            margin-bottom:40px;
+          }
+
+        
+     div.campo .underline::before{
+         content: "";
+         position:absolute;
+         width:100%;
+         height:2px;
+         margin-left:0px;
+         top:40px;
+         background-color:rgba(0,0,0,0.2);
+          }
+          
+     div.campo .underline::after{
+         content: "";
+         position:absolute;
+         width:100%;
+         height:2px;
+         margin-left:0px;
+         top:40px;
+         background-color:darkred;
+         transform: scaleX(0);
+         transform-origin: left;
+         transition: all 0.3s ease-in-out;
+         
+      
+          }
+          div.campo input:focus ~ div.underline::after{
+            transform: scaleX(1);
+          }
+          
+          input[type="submit"]{
+            
+            background-image:linear-gradient(to right ,var(--cor1),var(--cor2),var(--cor3) );
+            color:#fff;
+            font-weight:400;
+            border-radius:3px;
+            font-size:1.5rem;
+          }
+          input[type="submit"]:hover{
+            transition:all 0.3s ease;
+            letter-spacing:1px;
+            background-image:linear-gradient(to left ,var(--cor1),var(--cor2),var(--cor3) );
+            color:#fff;
+            font-weight:400;
+            border-radius:3px;
+            font-size:1.5rem;
+            
+          }
+            
+    </style>
+</head>
+<body>
+    <main> 
+    <form class="conteiner">
+    <h1>Login</h1>
+    <div class="campo">
+         <input type="text" name="user" id="username" placeholder="Username">
+    <div class="underline"></div>
+    </div>
+    
+    <div class="campo">
+         <input type="password" name="password" id="password" placeholder="Password">
+    <div class="underline"></div>
+    </div>
+    <input type="submit" value="Enviar">
+    </form>
+
+    </main>
+</body>
+</html>

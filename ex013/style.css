@@ -1,0 +1,26 @@
+
+
+
+body{
+    background-image:linear-gradient(yellow, red, green);
+    color:black;
+    font-size:12pt;
+    font-family:Arial;
+}
+
+h1{
+    color:brown;
+    
+}
+    
+a{
+    color:brown;
+    text-decoration:none;
+    
+}
+
+h2{
+    background-color:pink;
+    color:white;
+    
+}

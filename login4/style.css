@@ -1,0 +1,113 @@
+:root{
+  --cor1:#5C23D9;
+  --cor2:#4D3BDF;
+  --cor3:#414CE8;
+  --cor4:#345EF1;
+  --cor5:#2B6BF7;
+}
+*{
+  margin:0;
+  padding:0;
+  outline: none;
+  border:0;
+}
+body{
+  background-image:linear-gradient(to right,var(--cor1),var(--cor2),var(--cor3) );
+  min-height:100vh;
+  min-width:100vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+main.conteiner{
+  background-color:#fff;
+  max-width:350px;
+  min-height:20vh;
+  padding:2rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  border-radius:5px;
+}
+main h1{
+  font-weight: 300;
+  margin-bottom:2rem;
+  position:relative;
+
+}
+
+main h1::before{
+  content:"";
+  position: absolute;
+  height:4px;
+  width:25px;
+  bottom:3px;
+  left:1px;
+  background-image:linear-gradient(to right,var(--cor1),var(--cor2),var(--cor3) );
+  border-radius:15px;
+}
+form {
+  display:flex;
+  flex-direction: column;
+}
+.campo_input{
+  position: relative;
+  background-color:yellowgreen;
+  height:10px;
+  width:100%;
+}
+.campo_input input {
+  font-size:1em;
+  color:rgba(0, 0, 0, 0.7);
+  
+}
+form .campo_input:first-child{
+    margin-bottom:2rem;
+}
+.campo_input .underline::before{
+    content:"";
+    position:absolute;
+    height:2px;
+    width:100%;
+    bottom:-5px;
+    left:0px;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.campo_input .underline::after{
+    content:"";
+    position:absolute;
+    height:2px;
+    width:100%;
+    bottom:-5px;
+    left:0px;
+    background-image:linear-gradient(to right,var(--cor1),var(--cor2),var(--cor3) );
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+.campo_input input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.campo_input input::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  
+  
+}
+form input[type="submit"]{
+  background-image:linear-gradient(to right,var(--cor1),var(--cor2),var(--cor3) );
+  margin-top:2rem;
+  padding:0.4rem;
+  color:#fff;
+  font-size:0.8rem;
+  font-weight:300;
+  border-radius:5px;
+  transition:all 0.3s ease;
+  
+  
+}
+form input[type="submit"]:hover{
+    letter-spacing:0.7px;
+    background-image:linear-gradient(to left,var(--cor1),var(--cor2),var(--cor3) );
+    
+  
+}

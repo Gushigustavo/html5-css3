@@ -1,0 +1,99 @@
+            * {
+                padding: 0px;
+                margin: 0px;
+
+            }
+            section {
+                background-image: linear-gradient(-45deg,#BF26A6,#D9308D,#7C17BF,#E52F84);
+                width: 280px;
+                height: 500px;
+                margin: 30px;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            #log {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin: 10px 120px;
+
+            }
+            #creater {
+                display: inline;
+                font-size: 2em;
+                color: white;
+                font-weight: 600;
+                margin: 3px 40px;
+                text-shadow: 0.5px 0.5px 0.5px black;
+
+
+            }
+            .caixa {
+                width: 250px;
+                height: 30px;
+                margin-bottom: 25px;
+                text-decoration: none;
+                font-size: 1em;
+                outline: none;
+
+
+            }
+            .texto_box {
+                font-size: 0.8em;
+                color: white;
+                text-shadow: 0.1px black;
+
+            }
+            #login {
+                padding: 10px;
+                margin-top: 30px;
+
+
+            }
+            #botao {
+
+                color: gray;
+                width: 105px;
+                height: 35px;
+                margin-top: 10px;
+                text-align: center;
+                background-color: white;
+                border: none;
+
+
+
+            }
+            #botao:hover {
+
+                background-color: lightyellow;
+
+
+            }
+            #texto {
+                padding-bottom: 2px;
+                font-size: 1.3em;
+
+            }
+            #ico {
+
+                margin: 3px 2px 0px 5px;
+
+            }
+            #caixa2 {
+
+                height: 70px;
+                width: 260px;
+                margin-top: 20px;
+                box-shadow: 0px -0.3px 0.2px white;
+                padding-top: 20px;
+                text-align: center;
+                color: white;
+                font-weight: 300;
+                text-shadow: 0.1px black;
+            }
+            .logos {
+                padding-top: 10px;
+                margin-left: 10px;
+                margin-top: 5px;
+
+            }

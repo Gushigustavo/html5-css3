@@ -1,0 +1,35 @@
+ #barra_externa{
+  width:218px;
+  height: 3px;
+  padding-top:0.1px;
+  margin-left:3px;
+   
+ }
+ 
+ 
+     
+ 
+ 
+
+.barra_interna{
+
+    
+  height:100%;
+  animation-name: barra;
+  animation-duration:1s;
+  
+  background-image:linear-gradient(90deg,#D9308D,#BF26A6,#7C17BF,#500FD6,#4B64F2);
+  
+  
+}
+@keyframes barra{
+  
+  from{
+    width:0%;
+  }
+  
+  to{
+    width:100%;
+  }
+}
+        
