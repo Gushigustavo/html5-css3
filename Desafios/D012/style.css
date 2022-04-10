@@ -7,16 +7,12 @@
 }
 
 body{
+  background-color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif Sans-Serif;
-  max-height: 100vh;
-  max-width: 100vw;
+  min-height: 100vh;
+
 }
 
-main{
-  
-  min-width: 100%;
-  margin:auto;
-}
 
 header{
   background-color:black;
@@ -30,18 +26,18 @@ header{
 h1{
 
   font-family:"Passion One", cursive;
+  font-variant: small-caps;/*Coloca todas as letras maiúsculas n gritante*/
   font-size:5.4em;
 }
 header > p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
 }
 
-header > p > a{
-  padding-top:5px;
+header a{
   text-decoration: none;
   color:white;
   font-weight: bold;
+padding-bottom: 100px;
   
 }
 header > p > a:hover{
@@ -50,71 +46,56 @@ header > p > a:hover{
 
 p{
   font-family:'Sriracha', cursive;
+
 }
 
-p.branco{
+section.branco, section.box1, section.box2{
   font-size:1em;
-  height: 80px;
-  width:170px;
-  margin:80px 0px 250px 80px;
-  line-height: 2em;
-  text-align: left;
+  padding-top: 10vh; /*Os paragráfos terão 10% de altura da da viewport. */
+  padding-bottom: 10vh;
+  padding-left: 10vh;
+  line-height: 2.5;
   
 }
+section.branco :first-child{
+ margin-bottom: 10vh;
+
+}
   
-section.box1{
+section.box1, section.box2{
+  background-color: lightgray;
   background-image: url("imagens/background001.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height: 400px;;
   background-attachment: fixed;
   background-position: right bottom ;
+  color: white;
   
 } 
-section.box2{
-  background-image: url("imagens/background002.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 400px;;
-  background-attachment: fixed;
-  background-position: center center;
-  
-} 
-section > article{
-  position: relative;
+section.box1  p, section.box2  p{
+  background-color: rgba(0, 0, 0,0.5);
+  width: 190px;
+  padding: 5px;
+
 }
 
 
-section > article > p{
-  position:absolute;
-  top:-25px;
-  background-color:rgba(0,0,0,0.6);
-  padding:13px;
-  color:white;
-  font-size:1em;
-  height: 280px;
-  width:170px;
-  margin:80px 0px 200px 80px;
-  line-height: 2em;
-  font-weight: 500;
-  text-align: left;
-}
+
 footer{
 background-color: black;
 padding: 10px;
 }
-footer > p{
+footer  p{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
+  margin: 0px;
 }
-footer > p > a{
+footer a {
   text-decoration: none;
-  color: white;
-  font-weight: bolder;
-
+  color:white;
+  font-weight: bold;
 }
-
-footer > p > a:hover{
+footer a:hover{
   text-decoration: underline;
 }
