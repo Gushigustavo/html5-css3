@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 *{
   margin:0;
   padding:0;
     
 }
+:root{
+  --fontpadrao:Verdana, Geneva, Tahoma, sans-serif Sans-Serif;
+  --font1:"Passion One", cursive;
+  --font2:'Sriracha', cursive;
+}
 
 body{
   background-color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif Sans-Serif;
+  font-family: var(--fontpadrao);
   min-height: 100vh;
 
 }
@@ -17,7 +23,6 @@ body{
 header{
   background-color:black;
   max-width:100%;
-  height:200px;
   text-align: center;
   color:white;
   padding-top: 100px;
@@ -25,19 +30,20 @@ header{
 }
 h1{
 
-  font-family:"Passion One", cursive;
+  font-family:var(--font1);
   font-variant: small-caps;/*Coloca todas as letras maiúsculas n gritante*/
-  font-size:5.4em;
+  font-size:10vw;
 }
 header > p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fontpadrao);
+  padding-bottom: 100px;
 }
 
 header a{
   text-decoration: none;
   color:white;
   font-weight: bold;
-padding-bottom: 100px;
+
   
 }
 header > p > a:hover{
@@ -45,7 +51,7 @@ header > p > a:hover{
 }
 
 p{
-  font-family:'Sriracha', cursive;
+  font-family:var(--font2);
 
 }
 
@@ -53,8 +59,9 @@ section.branco, section.box1, section.box2{
   font-size:1em;
   padding-top: 10vh; /*Os paragráfos terão 10% de altura da da viewport. */
   padding-bottom: 10vh;
-  padding-left: 10vh;
+  padding-left: 30px;
   line-height: 2.5;
+  font-size: 2.5vw;
   
 }
 section.branco :first-child{
@@ -62,7 +69,7 @@ section.branco :first-child{
 
 }
   
-section.box1, section.box2{
+section.box1 {
   background-color: lightgray;
   background-image: url("imagens/background001.jpg");
   background-size:cover;
@@ -72,9 +79,20 @@ section.box1, section.box2{
   color: white;
   
 } 
+section.box2{
+  background-color: lightgray;
+  background-image: url("imagens/background002.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom ;
+  color: white;
+  
+
+}
 section.box1  p, section.box2  p{
+  display: inline-block;
   background-color: rgba(0, 0, 0,0.5);
-  width: 190px;
   padding: 5px;
 
 }
