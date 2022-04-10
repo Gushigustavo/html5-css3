@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento vertical</title>
+    <style>
+      section.container{
+        position:relative;
+        background-color:purple;
+        height:400px;
+        padding:10px;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+      }
+      
+      article.conteudo{
+        position: absolute;
+        background-color:yellow;
+        height: 150px;
+        width: 150px;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <article class="conteudo">
+        
+      </article>
+    </section>
+  </body>
+</html>
