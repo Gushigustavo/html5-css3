@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        *{margin: 0px;}
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        p{
+            text-indent: 20px;
+            margin-bottom: 10px;
+            margin: 10px;
+        }
+        section.container{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 300px;
+            border: 1px solid black;
+
+            
+        
+        }
+        div{
+            
+            text-align: center;
+            background-color: red;
+            margin: 5px;
+            border: 1px solid black;
+            flex: 1;
+            
+        }
+        section.container.rowrevarse{
+            flex-direction: row-reverse;
+        }
+        section.container.column{
+            flex-direction: column;
+        }
+        section.container.colunm-revarse{
+            flex-direction: column-reverse;
+
+        }
+    
+            
+    </style>
+</head>
+<body>
+    <h1>Flex-direction</h1>
+    <p>Por padrão o flex-direction assim que aplicado ele fica em linha(row).</p>
+    <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <p>Flex-direction:row-revarse;</p>
+    <section class="container rowrevarse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <p>Flex-direction:colunm;</p>
+    <section class="container column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <p>Flex-direction:column-revarse;</p>
+    <section class="container colunm-revarse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+</html>
