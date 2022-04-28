@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h1{
+            font-weight: normal;
+            text-align: center;
+            font-size: 1em;
+            margin: 10px;
+        }
+        section.container{
+            max-width: 400px;
+            display: flex;
+            margin: auto;
+            border: 1px solid black;
+
+
+        }
+        div{
+            background-color: red;
+            margin: 5px;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+        section.container.flex-end{
+            justify-content: flex-end;
+        }
+        section.container.center{
+            justify-content: center;
+        }
+        section.container.space-between{
+            justify-content: space-between;
+        }
+        section.container.space-around{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content:flex-start;inicio do container, valor padrão</h1>
+<section class="container">
+    <div class="itens">1</div>
+    <div class="itens">2</div>
+    <div class="itens">3</div>
+    <div class="itens">4</div>
+</section>
+
+<h1>justify-content:flex-end; final do container</h1>
+<section class="container flex-end">
+    <div class="itens">1</div>
+    <div class="itens">2</div>
+    <div class="itens">3</div>
+    <div class="itens">4</div>
+</section>
+
+<h1>justify-content:center; </h1>
+<section class="container center">
+    <div class="itens">1</div>
+    <div class="itens">2</div>
+    <div class="itens">3</div>
+    <div class="itens">4</div>
+</section>    
+
+<h1>justify-content:space-between; valor padrão</h1>
+<section class="container space-between">
+    <div class="itens">1</div>
+    <div class="itens">2</div>
+    <div class="itens">3</div>
+    <div class="itens">4</div>
+</section>    
+
+<h1>justify-content:flex-start; valor padrão</h1>
+<section class="container space-around">
+    <div class="itens">1</div>
+    <div class="itens">2</div>
+    <div class="itens">3</div>
+    <div class="itens">4</div>
+</section>    
+
+
+</body>
+
+</html>
