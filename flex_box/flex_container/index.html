@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+            *{
+                margin: 0px;
+            }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+        h1{
+            text-align: center;
+            font-size: 1em;
+        }
+        section{
+            text-align: center;
+            width: 500px;
+            border: 1px solid black;
+            
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        div{
+            height: 30px;
+            background-color:lightsalmon;
+            margin: 5px;
+            border: 1px solid black;
+            
+        }
+        section.container{
+            display: flex;
+            
+        }
+        section.container_flex{
+            display: flex;
+        }
+        section.container_flex_wrap{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        section.container_flex_1{
+            display: flex;
+            flex: 1;
+        }
+        div.item{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>display: block;</h1>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+        <h1>display: flex;</h1>
+    <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+        <h1>display: flex;</h1>
+    <section class="container_flex">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+        <div>item 10</div>
+        <div>item 11</div>
+    </section>
+        <h1>flex-wrap:wrap;</h1>
+    <section class="container_flex_wrap">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+        <div>item 10</div>
+        <div>item 11</div>
+    </section>
+        <h1>display:flax; //flax item</h1>
+    <section class="container_flex_1">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        
+    </section>
+</body>
+</html>

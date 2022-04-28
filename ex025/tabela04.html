@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+
+        }
+        caption{
+            padding: 10px;
+            background-color: lightblue;
+            font-size: 1.5em;
+        }
+        tr,th,td{
+            border: solid 1px black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+      <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">filmes</th>
+            </tr>
+        </thead>
+      <tbody>
+          <tr>
+            <th  scopo="rowgroup" rowspan="3">Mulheres</th>
+            <td>Ana Maria soares</td>
+            <td>Alen</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+          </tr>
+          <tr>
+              <td>Beatriz souza</td>
+              <td>Hulk</td>
+              <td>Inception</td>
+              <td>Batman</td>
+              
+          </tr>
+          <tr>
+              <td>Claudia Melo</td>
+              <td>Oblivion</td>
+              <td>Matrix</td>
+              <td>Gladiador</td>
+
+          </tr>
+          <tr>
+              <th scope="rowgroup" rowspan="3" >Homens</th>
+              <td>Bruno Mendonça</td>
+              <td>Intocaveis</td>
+              <td>Amenesia</td>
+              <td>Big Hero</td>
+              
+          </tr>
+          <tr>
+              <td>Daniel Lourenço</td>
+              <td> Wally</td>
+              <td>Callboy</td>
+              <td>Ato de liberdade</td>
+          </tr>
+          <tr>
+              <td>Fabiano Mota</td>
+              <td>Star War v</td>
+              <td>Taxi drive</td>
+              <td>Toy story</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <th scope="row" colspan="4">Total</th>
+              <td>1000</td>
+          </tr>
+      </tfoot>
+    </table>
+    
+</body>
+</html>
