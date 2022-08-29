@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">LOGO</a>
+
+       <nav id="navH">
+            <!-- Parametros de acessibilidade -->
+                <!-- aria-label: Rótulo para o leitor de tela -->
+                    <!-- aria-haspopup: Leitor de tela saber que tem um botão que abre uma tela  pop com valor de verdadeiro -->
+                        <!-- aria-expanded: Para saber que o botão esta desativado com valor de false  -->
+                            <!-- aria-controls: Para saber que ele controla o menu de navegação controla o menu -->
+            <button id="btnH" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="burguer"></span>
+            </button>       
+                        <!-- role: Com valor do que ele é no caso ele é um menu -->
+            <ul id="menu" role="Menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contatos</a></li>
+                
+                
+            </ul>
+       </nav>
+    </header>
+    <main>
+        <script defer src="script.js"></script>
+    </main>
+    
+</body>
+</html>
